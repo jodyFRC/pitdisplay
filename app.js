@@ -127,7 +127,7 @@ function getEventList(){
                 eventList[ev["key"]] = ev["name"]
             }
             //send to appropriate room
-            console.log(eventList);
+            //console.log(eventList);
         });
     }
     return eventList
