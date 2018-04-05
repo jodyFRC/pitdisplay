@@ -2,7 +2,7 @@
   "name": "pitInfo",
   "version": "1.0.0",
   "description": "Display information about the game in the pits",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
