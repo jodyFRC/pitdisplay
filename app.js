@@ -119,7 +119,7 @@ function matchUpdated(data) {
 }
 function getEventList(){
     if (!(eventList.length > 0)){
-        request({url: "http://www.thebluealliance.com/api/v2/events/2016", headers: heads}, function(error, response, body) {
+        request({url: "http://www.thebluealliance.com/api/v2/events/2018", headers: heads}, function(error, response, body) {
             //create a smaller hash so that it uses less network
             eventList = {}
             for (var i = 0; i < JSON.parse(body).length; i++){
@@ -127,7 +127,7 @@ function getEventList(){
                 eventList[ev["key"]] = ev["name"]
             }
             //send to appropriate room
-            //console.log(eventList);
+            console.log(eventList);
         });
     }
     return eventList
