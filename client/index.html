@@ -28,8 +28,8 @@
 
 
         //Set this to any team number
-        var teamNumber = 254;
-        var room = "2016new"
+        var teamNumber = 972;
+        var room = "2018new"
         //Filters matches
         var dats = []
         var dats_matches = []
@@ -39,9 +39,9 @@
         var accountForLagMode = true;
         
         
-        var socket = io("https://254robottest-vmcool09.c9.io/schedule")
-        var rsocket = io("https://254robottest-vmcool09.c9.io/rankings")
-        var lagSocket = io("https://254robottest-vmcool09.c9.io/lag")
+        var socket = io("https://pit-display-972.herokuapp.com/schedule")
+        var rsocket = io("https://pit-display-972.herokuapp.com/rankings")
+        var lagSocket = io("https://pit-display-972.herokuapp.com/lag")
         
         lagSocket.on('message', function(data) {
             console.log(data);
